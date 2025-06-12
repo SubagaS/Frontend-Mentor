@@ -15,7 +15,7 @@ body {
 
 .container {
   background-color: hsl(0, 0%, 100%);
-  max-width: 375 px;
+  /* max-width: 375px; */
   border-radius: 1.5rem;
 }
 .img-omelette {
@@ -24,8 +24,8 @@ body {
   margin-bottom: 1.5rem;
 }
 .h1-title {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   font-family: 'Young Serif', serif;
   font-weight: 400;
   font-size: 2rem;
@@ -33,8 +33,8 @@ body {
   margin-bottom: 1rem;
 }
 .p-about {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   font-size: 1rem;
   word-spacing: 2px;
   color: hsl(30, 10%, 34%);
@@ -60,13 +60,13 @@ h3 {
   color: hsl(30, 10%, 34%);
 }
 .prep-time {
-  width: 320px;
+  width: 85%;
   height: 170px;
   background-color: hsl(330, 100%, 98%);
   border-radius: 10px;
   margin-top: 1rem;
-  margin-left: 1.2rem;
-  margin-right: 1.2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 .prep-ul li::marker {
   color: hsl(332, 51%, 32%);
@@ -75,8 +75,8 @@ h3 {
 /* Ingredients */
 .ingredients {
   margin-top: 1.5rem;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   margin-bottom: 2rem;
 }
 .ingredients h2 {
@@ -87,8 +87,8 @@ h3 {
 }
 .ingredients ul {
   margin-top: 1.2rem;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   word-wrap: break-word;
 }
 .ingredients li {
@@ -101,14 +101,14 @@ h3 {
 
 hr.solid {
   border-top: 0.2px solid hsl(30, 54%, 90%);
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 /* Instructions */
 .instructions {
-  margin-left: 1.5rem;
-  margin-right: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   margin-bottom: 2rem;
 }
 .instructions h2 {
@@ -118,8 +118,8 @@ hr.solid {
   color: hsl(14, 45%, 36%);
 }
 .instructions ol {
-  margin-left: 1.5rem;
-  margin-right: 1rem;
+  margin-left: 2rem;
+  margin-right: 1.5rem;
   word-wrap: break-word;
   margin-top: 1.2rem;
 }
@@ -154,8 +154,8 @@ td {
   padding-left: 1.5rem;
 }
 .nutrition {
-  margin-left: 1.5rem;
-  margin-right: 1rem;
+  margin-left: 2rem;
+  margin-right: 1.5rem;
 }
 .nutrition h2 {
   font-family: 'Young Serif', serif;
@@ -173,5 +173,64 @@ td {
 }
 .brown {
   color: hsl(14, 45%, 36%);
-  font-weight: 600;
+  font-weight: 700;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media only screen and (min-width: 1440px) {
+  body {
+    background-color: hsl(30, 54%, 90%);
+  }
+  .container {
+    max-width: 740px;
+    border-radius: 20px;
+    padding: 2rem;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  .img-omelette {
+    border-radius: 20px;
+  }
+  .h1-title {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .p-about {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    word-spacing: 0;
+  }
+  .prep-time {
+    margin-left: 1rem;
+    width: 95%;
+  }
+  .ingredients {
+    margin-left: 1rem;
+  }
+  .instructions {
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+  }
+  .instructions li {
+    word-spacing: 0;
+  }
+  hr.solid {
+    margin-left: 1rem;
+  }
+  .nutrition {
+    margin-left: 1rem;
+  }
+  .nutrition p {
+    word-spacing: 0;
+  }
 }
