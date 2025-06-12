@@ -15,7 +15,6 @@ body {
 
 .container {
   background-color: hsl(0, 0%, 100%);
-  /* max-width: 375px; */
   border-radius: 1.5rem;
 }
 .img-omelette {
@@ -24,17 +23,14 @@ body {
   margin-bottom: 1.5rem;
 }
 .h1-title {
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin: 0 2rem 1rem;
   font-family: 'Young Serif', serif;
   font-weight: 400;
   font-size: 2rem;
   color: hsl(24, 5%, 18%);
-  margin-bottom: 1rem;
 }
 .p-about {
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin: 0 2rem;
   font-size: 1rem;
   word-spacing: 2px;
   color: hsl(30, 10%, 34%);
@@ -64,9 +60,7 @@ h3 {
   height: 170px;
   background-color: hsl(330, 100%, 98%);
   border-radius: 10px;
-  margin-top: 1rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin: 1rem 2rem 0 2rem;
 }
 .prep-ul li::marker {
   color: hsl(332, 51%, 32%);
@@ -74,10 +68,7 @@ h3 {
 
 /* Ingredients */
 .ingredients {
-  margin-top: 1.5rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  margin-bottom: 2rem;
+  margin: 1.5rem 2rem 2rem;
 }
 .ingredients h2 {
   font-family: 'Young Serif', serif;
@@ -86,9 +77,7 @@ h3 {
   font-size: 25px;
 }
 .ingredients ul {
-  margin-top: 1.2rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin: 1.2rem 2rem 0;
   word-wrap: break-word;
 }
 .ingredients li {
@@ -101,15 +90,12 @@ h3 {
 
 hr.solid {
   border-top: 0.2px solid hsl(30, 54%, 90%);
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin: 0 2rem;
 }
 
 /* Instructions */
 .instructions {
-  margin-left: 2rem;
-  margin-right: 2rem;
-  margin-bottom: 2rem;
+  margin: 0 2rem 2rem;
 }
 .instructions h2 {
   margin-top: 1.5rem;
@@ -118,10 +104,8 @@ hr.solid {
   color: hsl(14, 45%, 36%);
 }
 .instructions ol {
-  margin-left: 2rem;
-  margin-right: 1.5rem;
+  margin: 1.2rem 1.5rem 0 2rem;
   word-wrap: break-word;
-  margin-top: 1.2rem;
 }
 .instructions li {
   margin-bottom: 1rem;
@@ -139,8 +123,7 @@ ol li::marker {
 table {
   border-collapse: collapse;
   width: 90%;
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
+  margin: 1rem 0 1.5rem;
 }
 tr {
   border-bottom: 1px solid hsl(30, 18%, 87%);
@@ -149,9 +132,7 @@ tr {
   border-bottom: none;
 }
 td {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1.5rem;
+  padding: 1rem 0 1rem 1.5rem;
 }
 .nutrition {
   margin-left: 2rem;
@@ -193,21 +174,16 @@ td {
     max-width: 740px;
     border-radius: 20px;
     padding: 2rem;
-    margin: auto;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin: 5rem auto;
   }
   .img-omelette {
     border-radius: 20px;
   }
   .h1-title {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 0 1rem;
   }
   .p-about {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 2rem;
+    margin: 0 1rem 2rem;
     word-spacing: 0;
   }
   .prep-time {
