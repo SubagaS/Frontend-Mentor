@@ -40,7 +40,7 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: var(--white);
-  border-radius: 2rem;
+  /* border-radius: 2rem; */
 }
 
 /* Score */
@@ -181,6 +181,14 @@ body {
   border-radius: 2rem;
   font-size: 0.9rem;
 }
+.continue-btn:hover {
+  background: linear-gradient(
+    to top,
+    var(--light-royal-blue),
+    var(--light-slate-blue)
+  );
+  cursor: pointer;
+}
 
 .attribution {
   font-size: 11px;
@@ -200,7 +208,9 @@ body {
     flex-direction: row;
     align-items: stretch;
     min-height: 512px;
-    min-width:736px;
+    min-width: 736px;
+    border-radius: 2rem;
+    box-shadow: 0.8rem 0.8rem 2rem hsla(224, 30%, 27%, 10%);
   }
   .score-board {
     border-radius: 2rem 2rem 2rem 2rem;
@@ -210,23 +220,23 @@ body {
     /* height: 100%; */
     /* align-items: stretch; */
   }
-  .result{
+  .result {
     font-size: 1.3rem;
   }
-  .score-board h3{
+  .score-board h3 {
     font-size: 1.5rem;
   }
   .overall-score {
     margin-top: 1.6rem;
-    max-width:20rem;
+    max-width: 20rem;
     height: 10rem;
     border-radius: 50%;
   }
-  .overall-score h1{
+  .overall-score h1 {
     font-size: 4.2rem;
   }
-  .overall-score p{
-    font-size:1.1rem;
+  .overall-score p {
+    font-size: 1.1rem;
   }
   .score-p {
     margin: 1.1rem;
@@ -240,20 +250,26 @@ body {
     max-width: 368px;
     padding: 2.4rem 2.2rem 0;
   }
-  .summary-p{
+  .summary-p {
     font-size: 1.3rem;
   }
-  .summary{margin-bottom: 1.5rem;margin-top: 1.5rem;}
-  .reaction, .memory, .verbal, .visual{
-   max-height: 54px;
-  border-radius: 0.4rem;
+  .summary {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .reaction,
+  .memory,
+  .verbal,
+  .visual {
+    max-height: 54px;
+    border-radius: 0.4rem;
     padding: 1rem;
   }
-  .icon-p p{
+  .icon-p p {
     font-size: 0.9rem;
     font-weight: 500;
   }
-  .continue-btn{
+  .continue-btn {
     font-size: 1rem;
     padding: 0.75rem;
     font-weight: 550;
