@@ -1,0 +1,134 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+}
+:root {
+  --green-500: hsl(158, 36%, 37%);
+  --green-700: hsl(158, 42%, 18%);
+  --black: hsl(212, 21%, 14%);
+  --grey: hsl(228, 12%, 48%);
+  --cream: hsl(30, 38%, 92%);
+  --white: hsl(0, 0%, 100%);
+}
+body {
+  font-family: 'Montserrat';
+  background-color: var(--cream);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: 2rem 1.14rem;
+  border-radius: 1rem;
+  background-color: var(--white);
+  max-height: 43.71rem;
+  max-width: 24.5rem;
+}
+.product-img-desktop {
+  display: none;
+}
+.product-img-mobile {
+  width: 100%;
+  min-height: 17.14rem;
+  border-radius: 1rem 1rem 0 0;
+}
+.product-info-container {
+  padding: 1.82rem 1.78rem;
+}
+.perfume-title {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.4rem;
+  margin-bottom: 1.1rem;
+  color: var(--grey);
+  font-weight: 500;
+}
+.perfume-name {
+  font-family: 'Fraunces';
+  font-size: 2.3rem;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+.perfume-info {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding-right: 0.1rem;
+  color: var(--grey);
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.35rem;
+}
+.reduced-price {
+  font-family: 'Fraunces';
+  font-size: 2rem;
+  color: var(--green-500);
+}
+.actual-price {
+  padding-left: 1rem;
+  color: var(--grey);
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-decoration: line-through;
+}
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--green-500);
+  color: var(--white);
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-family: 'Montserrat';
+  font-weight: 700;
+}
+.cart-icon {
+  padding: 0.5rem;
+}
+button:hover {
+  background-color: var(--green-700);
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 50rem) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 42.8571rem;
+    max-height: 32.1428rem;
+    box-shadow: 0.5rem 0.5rem 2rem hsla(228, 12%, 48%,10%);
+  }
+  .product-img-mobile {
+    display: none;
+  }
+  .product-img-desktop {
+    display: block;
+    width: 21.4285rem;
+    border-radius: 1rem 0 0 1rem;
+    height: 100%;
+  }
+  .product-info-container {
+    padding: 2.35rem 2.14rem;
+  }
+  .product-price {
+    margin-bottom: 1.8rem;
+  }
+}
