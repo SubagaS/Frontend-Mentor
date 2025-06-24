@@ -110,3 +110,30 @@ hr {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media only screen and (min-width: 47.22rem) {
+  .card-container {
+    max-width: 19.44rem;
+    max-height: 33.11rem;
+  }
+  .equilibrium-img {
+    max-width: 16.77rem;
+    max-height: 16.77rem;
+  }
+  h3 {
+    margin-top: 1.388rem;
+  }
+  .info-p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  .eth-value {
+    margin: 1.388rem 0 1.5rem 0;
+  }
+  hr {
+    margin-bottom: 1rem;
+  }
+  .card-container > p:last-child {
+    margin-bottom: 0.7rem;
+  }
+}
