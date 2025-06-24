@@ -1,33 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+    </style>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
+  <body>
+    <main>
+      <div class="card-container">
+        <img
+          src="./images/image-equilibrium.jpg"
+          alt="equilibrium-img"
+          class="equilibrium-img"
+        />
+        <h3>Equilibrium #3429</h3>
+        <p class="info-p">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <div class="eth-value">
+          <p>
+            <img src="./images/icon-ethereum.svg" alt="eth-icon" />0.041 ETH
+          </p>
+          <p>
+            <img src="./images/icon-clock.svg" alt="clock-icon" />3 days left
+          </p>
+        </div>
+        <hr />
+        <p>
+          <img src="./images/image-avatar.png" alt="creator-img" />
+          <span
+            >Creation of<span class="creator-name"> Jules Wyvern</span></span
+          >
+        </p>
+      </div>
+    </main>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/subaga98">Subaga Sreepathy</a>.
+    </div>
+  </body>
 </html>
