@@ -1,0 +1,69 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-size: 15px;
+  width: 100%;
+  height: 100%;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --slate-300: hsl(212, 45%, 89%);
+  --slate-500: hsl(216, 15%, 48%);
+  --slate-900: hsl(218, 44%, 22%);
+}
+
+body {
+  font-family: 'Outfit';
+  background-color: var(--slate-300);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  max-width: 21.33rem;
+  max-height: 33.26rem;
+  background-color: var(--white);
+  padding: 1.066rem 1.066rem 2.66rem 1.066rem;
+  border-radius: 1.33rem;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.047), 0 25px 25px rgba(0, 0, 0, 0.25);
+}
+.qr-code {
+  max-width: 19.2rem;
+  max-height: 19.2rem;
+  border-radius: 0.66rem;
+  margin-bottom: 1.6rem;
+}
+.info-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.066rem;
+}
+.info-container h2 {
+  font-size: 1.466rem;
+  line-height: 120%;
+  text-align: center;
+  margin-bottom: 1.066rem;
+}
+
+.info-container p {
+  font-size: 1rem;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: var(--slate-500);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
