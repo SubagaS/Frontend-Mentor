@@ -36,11 +36,13 @@ body {
   max-width: 20.4375rem;
   max-height: 35.4375rem;
   border-radius: 0.75rem;
+  box-shadow: 0 2px 20px hsla(245, 75%, 52%, 20%);
 }
 .illustration-img {
   max-width: 20.4375rem;
   max-height: 10rem;
   border-radius: 0.75rem 0.75rem 0 0;
+  display: block;
 }
 .order-info {
   padding: 1.5rem;
@@ -95,7 +97,10 @@ body {
   text-decoration: underline;
   margin-left: 1.5rem;
 }
-
+.plan-info > p:last-child:hover {
+  color: rgba(118, 108, 241, 1);
+  cursor: pointer;
+}
 button {
   height: 3.125rem;
   width: 100%;
@@ -109,11 +114,19 @@ button {
   margin-bottom: 1.4375rem;
   box-shadow: 0 10px 20px hsla(245, 75%, 52%, 25%);
 }
+button:hover {
+  background-color: rgba(118, 108, 241, 1);
+  cursor: pointer;
+}
 
 .order-info > p:last-child {
   font-size: 0.8rem;
   font-weight: 900;
   color: var(--desaturated-blue);
+}
+.order-info > p:last-child:hover {
+  color: var(--dark-blue);
+  cursor: pointer;
 }
 
 .attribution {
@@ -122,4 +135,46 @@ button {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+@media only screen and (min-width: 56.25rem) {
+  body {
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .container {
+    max-width: 28.125rem;
+    max-height: 43.5625rem;
+  }
+  .illustration-img {
+    max-width: 28.125rem;
+    max-height: 13.75rem;
+    display: block;
+  }
+  .order-info {
+    padding: 3rem;
+  }
+  .order-info h1 {
+    font-size: 1.6rem;
+  }
+  .order-info > p:nth-child(2) {
+    padding: 0 2rem;
+  }
+  .music-icon {
+    max-width: 2.7rem;
+    max-height: 2.7rem;
+  }
+  .plan-info {
+    padding: 1.7rem;
+  }
+  .plan-info > p:last-child {
+    margin-left: 4.5rem;
+    font-size: 0.9rem;
+  }
+  .plan-amount > p:first-child {
+    font-size: 1rem;
+  }
+  .plan-amount > p:last-child {
+    font-size: 1rem;
+  }
 }
