@@ -1,0 +1,143 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+}
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-container {
+  max-width: 21.8rem;
+  height: 88.4rem;
+}
+.sedan-container {
+  background-color: var(--bright-orange);
+  border-radius: 1rem 1rem 0 0;
+}
+.suv-container {
+  background-color: var(--dark-cyan);
+}
+.luxury-container {
+  background-color: var(--very-dark-cyan);
+  border-radius: 0 0 1rem 1rem;
+}
+.sedan-container,
+.suv-container,
+.luxury-container {
+  max-height: 29.4rem;
+  padding: 3.2rem;
+}
+.all-img {
+  width: 3rem;
+  height: 2rem;
+  margin-bottom: 2.6rem;
+}
+.all-h1 {
+  font-family: 'Big Shoulders';
+  text-transform: uppercase;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 2.133rem;
+}
+.all-p {
+  font-family: 'Lexend Deca';
+  color: var(--transparent-white);
+  line-height: 1.7;
+  font-weight: 400;
+  font-size: 0.98rem;
+  margin-bottom: 1.733rem;
+}
+.all-button {
+  padding: 0.866rem 2.066rem;
+  border: none;
+  border-radius: 1.5rem;
+  background-color: var(--very-light-gray);
+  font-size: 1rem;
+  font-family: 'Lexend Deca';
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+.all-button:hover {
+  cursor: pointer;
+  border: solid 0.2rem white;
+  background-color: transparent;
+  color: white;
+}
+.sedan-container button {
+  color: var(--bright-orange);
+}
+
+.suv-container button {
+  color: var(--dark-cyan);
+}
+.luxury-container button {
+  color: var(--very-dark-cyan);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 63.33rem) {
+  body {
+    justify-content: center;
+  }
+  .main-container {
+    display: flex;
+    max-width: 61.33rem;
+    max-height: 33.33rem;
+  }
+  .sedan-container,
+  .suv-container,
+  .luxury-container {
+    max-width: 20.466rem;
+    max-height: 33.33rem;
+  }
+  .sedan-container {
+    border-radius: 1rem 0 0 1rem;
+    padding: 3.2rem 4.266rem 3.2rem 3.2rem;
+  }
+  .luxury-container {
+    border-radius: 0 1rem 1rem 0;
+    padding: 3.2rem 3.4rem 3.2rem 3.2rem;
+  }
+  .suv-container {
+    padding: 3.2rem 3.9rem 3.2rem 3.2rem;
+  }
+  .all-img {
+    width: 3.9rem;
+    height: 2.4rem;
+  }
+  .all-h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2.2rem;
+  }
+  .all-p {
+    font-size: 0.95rem;
+    margin-bottom: 5.66rem;
+  }
+  .all-button {
+    margin-bottom: 3.2rem;
+  }
+}
