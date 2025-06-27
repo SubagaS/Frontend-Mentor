@@ -22,7 +22,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
 }
 .main-container {
   max-width: 21.8rem;
@@ -75,12 +74,70 @@ body {
   font-weight: 500;
   margin-bottom: 0.8rem;
 }
+.all-button:hover {
+  cursor: pointer;
+  border: solid 0.2rem white;
+  background-color: transparent;
+  color: white;
+}
 .sedan-container button {
   color: var(--bright-orange);
 }
+
 .suv-container button {
   color: var(--dark-cyan);
 }
 .luxury-container button {
   color: var(--very-dark-cyan);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 63.33rem) {
+  body {
+    justify-content: center;
+  }
+  .main-container {
+    display: flex;
+    max-width: 61.33rem;
+    max-height: 33.33rem;
+  }
+  .sedan-container,
+  .suv-container,
+  .luxury-container {
+    max-width: 20.466rem;
+    max-height: 33.33rem;
+  }
+  .sedan-container {
+    border-radius: 1rem 0 0 1rem;
+    padding: 3.2rem 4.266rem 3.2rem 3.2rem;
+  }
+  .luxury-container {
+    border-radius: 0 1rem 1rem 0;
+    padding: 3.2rem 3.4rem 3.2rem 3.2rem;
+  }
+  .suv-container {
+    padding: 3.2rem 3.9rem 3.2rem 3.2rem;
+  }
+  .all-img {
+    width: 3.9rem;
+    height: 2.4rem;
+  }
+  .all-h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2.2rem;
+  }
+  .all-p {
+    font-size: 0.95rem;
+    margin-bottom: 5.66rem;
+  }
+  .all-button {
+    margin-bottom: 3.2rem;
+  }
 }
