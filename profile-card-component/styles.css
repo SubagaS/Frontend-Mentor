@@ -1,0 +1,108 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  font-family: 'Kumbh Sans';
+}
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+}
+body {
+  background-color: var(--dark-cyan);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./images/bg-pattern-top.svg'),
+    url('./images/bg-pattern-bottom.svg');
+  background-repeat: no-repeat;
+  background-position: top -250px left -320px, bottom -250px right -320px;
+  background-size: 34.55rem 34.5rem;
+}
+.main-container {
+  min-width: 18.11rem;
+  min-height: 20.77rem;
+  background-color: white;
+  border-radius: 1rem;
+  background-image: url('./images/bg-pattern-card.svg');
+  background-repeat: no-repeat;
+  background-size: 18.11rem 7.77rem;
+}
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4.833rem;
+}
+.profile-container img {
+  border-radius: 50%;
+  border: solid 0.44rem white;
+}
+.profile-container > p:nth-child(2) {
+  margin-top: 1rem;
+  color: var(--very-dark-desaturated-blue);
+  font-weight: 700;
+}
+.profile-container > p:nth-child(2) span {
+  color: var(--dark-grayish-blue);
+  font-weight: 500;
+}
+.profile-container > p:nth-child(3) {
+  margin-top: 0.55rem;
+  font-size: 0.77rem;
+  color: var(--dark-grayish-blue);
+}
+hr {
+  margin-top: 1.33rem;
+}
+.data-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.277rem 2.5rem;
+}
+.data-container p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  color: var(--very-dark-desaturated-blue);
+  font-weight: 700;
+}
+.data-container p span {
+  font-size: 0.55rem;
+  color: var(--dark-grayish-blue);
+  font-weight: 400;
+  letter-spacing: 0.0833rem;
+  margin-top: 0.2rem;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 41.66rem) {
+  body {
+    background-size: 54.33rem 54.22rem;
+    background-position: top -28rem left -15rem, bottom -32rem right -12rem;
+  }
+  .main-container {
+    min-width: 19.44rem;
+    min-height: 20.77rem;
+    background-size: 19.44rem 7.77rem;
+  }
+}
