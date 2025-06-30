@@ -94,3 +94,15 @@ hr {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media only screen and (min-width: 41.66rem) {
+  body {
+    background-size: 54.33rem 54.22rem;
+    background-position: top -28rem left -15rem, bottom -32rem right -12rem;
+  }
+  .main-container {
+    min-width: 19.44rem;
+    min-height: 20.77rem;
+    background-size: 19.44rem 7.77rem;
+  }
+}
