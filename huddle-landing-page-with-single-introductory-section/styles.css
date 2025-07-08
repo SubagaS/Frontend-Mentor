@@ -76,6 +76,11 @@ body {
     min-height: 2.5rem;
     border-radius: 1.25rem;
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 27%);
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--soft-magenta);
+    }
   }
 }
 footer {
@@ -91,6 +96,12 @@ footer {
     border-radius: 50%;
     padding: 0.5rem;
     color: white;
+
+    &:hover {
+      cursor: pointer;
+      border: solid 0.1rem var(--soft-magenta);
+      color: var(--soft-magenta);
+    }
   }
 }
 
@@ -104,3 +115,56 @@ footer {
   color: gainsboro;
 }
 
+@media only screen and (min-width: 55.625rem) {
+  body {
+    background-image: url('./images/bg-desktop.svg');
+    background-size: cover;
+    padding: 3.5rem;
+  }
+  .header-container {
+    margin-bottom: 5.5rem;
+    img {
+      min-width: 20rem;
+      height: 3rem;
+    }
+  }
+  .main-container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 2rem;
+  }
+  .illustration-img {
+    max-width: 50rem;
+    max-height: 40rem;
+    margin-right: 3rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+  .register-container {
+    align-items: flex-start;
+    margin-top: 2rem;
+    h1 {
+      font-size: 2.5rem;
+      text-align: left;
+      line-height: 3.75rem;
+    }
+    p {
+      font-size: 1.02rem;
+      line-height: 1.6rem;
+      text-align: left;
+    }
+    button {
+      font-size: 1.1rem;
+      min-height: 3.5rem;
+      border-radius: 1.75rem;
+    }
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 3rem;
+  }
+}
